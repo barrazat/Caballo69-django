@@ -1,0 +1,54 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="contenedor-form" id="formInicio">
+        <div class="toggle">
+            <span >Crear Cuenta</span>
+        </div>
+        <div class="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form action="#">
+                <input type="text" placeholder="Usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="button" name="iniciar" id="iniciar" >Iniciar sesion</button>
+            </form>
+        </div>
+        <div class="formulario" id="formRegistro">
+            <h2>Crear Cuenta</h2>
+            <form action="#">
+                <input type="text" id="nombres" placeholder="Nombre y Apellido" >
+                <input type="email" id="correo" placeholder="Correo" >
+            <input type="text" id="rut" placeholder="RUT">
+                <input type="text" id="telefono"  placeholder="Telefono" >
+                <input type="text" id="usuarioNuevo" placeholder="Usuario" >
+                <input type="password" id="contraseñaNuevo" placeholder="Contraseña" >
+            <!-- <input type="password" id="contraseñaNuevo2" placeholder="Confirmar contraseña" > 
+            -->
+                <label >Fecha de nacimiento </label> <br>
+                <input type="date" id="nacimiento" step="1" min="1950-01-01" max="2001-12-31" value="07-09-2018" > <br>
+                <label for="txtRegion">Region:</label>
+                <select id="txtRegion" oninput="selectCity()"></select>
+                <br>
+                <label for="txtCity">Ciudad:</label>
+                <select id="txtCity"></select>
+                <br>
+                
+                <label for="txtTipoVivienda">Tipo vivienda</label>
+                <select id="txtTipoVivienda">
+                    <option> ---------------</option>
+                    <option> Casa con patio grande</option>
+                    <option> Casa con patio pequeño</option>
+                    <option> Casa sin patio</option>
+                    <option> Departamento</option>
+                </select><br>
+                
+                
+                <button type="button" name="enviar" id="enviar" >Registrarse</button>
+                
+            </form>
+        </div>
+        <div class="reset-password">
+            <button type="button" name="btn-olvide" id="btn-olvide" >Olvide mi contraseña</button>
+        </div>
+    </div>
+{% endblock %}

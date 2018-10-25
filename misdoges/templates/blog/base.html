@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{% static 'css/gallery-style.css' %}">
     <link rel="stylesheet" href="{% static 'css/menu-style.css' %}">
     <link rel="stylesheet" href="{% static 'css/slider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/signup-style.css' %}">
     <link rel="stylesheet" media="screen and (max-width:775px)" href="{% static 'css/phone.css' %}">
     <title>Mis Perris</title>
 </head>
@@ -19,7 +20,7 @@
             <li><a href="#">Quienes somos</a></li>
             <li><a href="#">Servicios</a></li>
             <li><a href="{% url 'gallery' %}">Galeria</a></li>
-            <li><a href="sign-up.html">Registrar</a></li>
+            <li><a href="{% url 'sign-up' %}">Entrar</a></li>
             <li id="search-rigth"><input id="search-in" type="text" placeholder="Buscar..."></li>
           </ul>
     </nav>
@@ -56,5 +57,8 @@
     </footer>
     <script src="../static/js/jquery-3.1.1.min.js"></script>
     <script src="../static/js/slider.min.js"></script>
+    <script src="../static/js/sign-up.js"></script>
+    <script src="../static/js/Regiones.js"></script>
+    <script src="../static/js/validarRegistro.js"></script>
 </body>
 </html>

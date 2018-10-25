@@ -73,47 +73,6 @@ figure figcaption{
 	}
 }
 
-nav{
-    background-color: #252629;
-    width: 100%;
-}
-
-footer{
-    background-color: rgb(0,0,0,0.8);
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    color:white;
-}
-
-footer a {
-    color:#EC5504;
-    text-decoration: none;
-}
-
-#maps{
-    max-width: 500px;
-    width:100%;
-    margin: 0 auto;
-    display:block;
-    max-height: 80px;
-    frameborder:0;
-    border:0;
-}
-
-.content-box{
-    text-align: justify;
-}
-
-.foot-box{
-    width: 50%
-}
-
-#horse{
-    text-align: center;
-    width: 100%;
-}
-
 td{
     color:white;
 }

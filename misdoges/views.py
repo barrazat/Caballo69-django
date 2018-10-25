@@ -8,3 +8,6 @@ def gallery(request):
 
 def index(request):
     return render(request,'blog/index.html')
+
+def sign_up(request):
+    return render(request,'blog/sign-up.html')
