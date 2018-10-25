@@ -9,7 +9,7 @@
                 <div><p> publicado: {{ perros.published_date }} </p>
                 <h1 ><a href = "" >{{ perros.nombre }} </a ></h1>
                 <p >{{ perros.raza }} </p >
-                <img src="{{perros.foto}}">{{perros.foto}}</div>
+                <img src='{{perros.foto.url}}'>
             </div >{% endfor %}
     </body>
 </html>

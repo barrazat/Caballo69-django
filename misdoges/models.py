@@ -6,7 +6,7 @@ class Perro(models.Model):
     raza = models.CharField(max_length=50)
     descripcion = models.CharField(max_length=200)
     estado = models.CharField(max_length=11)
-    foto = models.ImageField(upload_to='misdoges/album/img')
+    foto = models.FileField()
     created_date = models.DateTimeField(
             default=timezone.now)
     published_date = models.DateTimeField(
