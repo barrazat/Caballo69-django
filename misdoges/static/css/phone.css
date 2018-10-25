@@ -1,0 +1,43 @@
+main{
+    width: 100%;
+}
+
+aside{
+    width: 100%;
+}
+
+li{
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+nav{
+    position:initial;
+    order:0;
+}
+
+.large-box{
+    max-width: 25em;
+    width: 100%;
+}
+
+.foot-box{
+    width: 100%;
+}
+
+.mini-box{
+    width: 100%;
+}
+
+#search-in{
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    padding: 14px;
+}
+
+#search-rigth{
+    float:right;
+}

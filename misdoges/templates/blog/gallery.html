@@ -1,15 +1,22 @@
-<html>
-    <head>
-        <title>galeria</title>
-    </head>
-    <body>
-            <div>
-                <h1><a href = "/" > galeria</a ></h1></div>
-                {% for perros in perros %} 
-                <div><p> publicado: {{ perros.published_date }} </p>
-                <h1 ><a href = "" >{{ perros.nombre }} </a ></h1>
-                <p >{{ perros.raza }} </p >
+{% extends 'blog/base.html' %}
+<div class="gallery-container">
+    {% block content %}
+        <header class="header-gallery">
+            <h1 class="h1gal">Galería</h1>
+        </header>
+        <br>
+        <div class="galeria">
+            {% for perros in perros %} 
+            <figure class="box-img" >
                 <img src='{{perros.foto.url}}'>
-            </div >{% endfor %}
-    </body>
-</html>
+                <figcaption>
+                    <h2>{{perros.nombre}}</h2>
+                    <p>{{perros.raza}}</p>
+                    <p>{{perros.descripcion}}</p>
+                    <p>{{perros.published_date}}</p>
+                </figcaption>
+            </figure>
+            {% endfor %}
+        </div>
+    {% endblock %}
+</div>

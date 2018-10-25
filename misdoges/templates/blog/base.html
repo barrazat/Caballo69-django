@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gallery-style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu-style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slider.css' %}">
+    <link rel="stylesheet" media="screen and (max-width:775px)" href="{% static 'css/phone.css' %}">
+    <title>Mis Perris</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="#">Quienes somos</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="{% url 'gallery' %}">Galeria</a></li>
+            <li><a href="sign-up.html">Registrar</a></li>
+            <li id="search-rigth"><input id="search-in" type="text" placeholder="Buscar..."></li>
+          </ul>
+    </nav>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <table class="foot-box">
+            <tr>
+                <td>Email</td>
+                <td>
+                    <a href="mailto:misperris@misperris.com">
+                        misperris@misperris.com
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Teléfono</td>
+                <td>
+                    <a href="tel:+569123456789">
+                        +56 123456789
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <table class="foot-box">
+            <tr>
+                <td>Dirección</td>
+                <td>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.261529953386!2d-70.75238091284422!3d-33.51177855973648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dcd1fe0c7bab%3A0x4d17b82a7ba77488!2sDuoc+UC%3A+Sede+Maipu!5e0!3m2!1ses-419!2scl!4v1535071987531" id = "maps" allowfullscreen></iframe></td>
+            </tr>
+        </table>
+        <p id="horse">&copy; Todos los derechos reservados - Caballo 69</p>
+    </footer>
+    <script src="../static/js/slider.min.js"></script>
+</body>
+</html>

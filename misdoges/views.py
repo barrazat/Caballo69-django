@@ -5,3 +5,6 @@ from .models import Perro
 def gallery(request):
     perros = Perro.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/gallery.html', {'perros': perros})
+
+def index(request):
+    return render(request,'blog/index.html')

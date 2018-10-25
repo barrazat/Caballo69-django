@@ -1,0 +1,60 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<header class="header-index">
+    <div class="content-header-index">
+        <h1>Mis perris</h1>
+        <h3>¿Te gustaría adoptar un perro?</h3>
+    </div>
+</header>
+<main>
+    <div class="mini-box">
+        <div class="content-box">
+            <h2>Galería</h2>
+            <img class="imag-mini" src="../static/img/dog-3.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aperiam facilis optio asperiores explicabo at veritatis est, distinctio modi quod aliquam quam aut ullam, excepturi, pariatur odit sit magnam. Inventore.
+            </p>
+            <a href="{% url 'gallery' %}">Ver más...</a>
+        </div>
+    </div>
+    <div class="mini-box">
+        <div class="content-box">
+            <h2>Quienes somos</h2>
+            <img class="imag-mini" src="../static/img/vet-1.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aperiam facilis optio asperiores explicabo at veritatis est, distinctio modi quod aliquam quam aut ullam, excepturi, pariatur odit sit magnam. Inventore.
+            </p>
+            <a href="#">Ver más...</a>
+        </div>
+    </div>
+    <br>
+    <div class="large-box">
+        <div class="content-box">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="../static/img/display/dog-1.jpg" style="width:100%">
+                  <div class="text">Pastor alemán</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="../static/img/display/dog-2.jpg" style="width:100%">
+                  <div class="text">Perro café</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="../static/img/display/dog-4.jpg" style="width:100%">
+                  <div class="text">Perrito triste</div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+            <br>
+        </div>
+    </div>
+</main>
+{% endblock %}

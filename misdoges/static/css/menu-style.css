@@ -1,0 +1,50 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav{
+    width: 100%; 
+    background-color: #252629;
+    position:sticky;
+    top:0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+nav ul li{
+    float: left;
+    margin-right: auto;
+}
+
+li{
+    text-align: center;
+    border-right: 1px solid #343434;
+}
+
+nav a{
+    display: block;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+/*Opcion para cuando pasa el mouse por el boton*/
+nav a:hover {
+  background-color: #696969;
+}
+
+#search-in{
+    width:150px;
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+#search-rigth{
+    float:right;
+}

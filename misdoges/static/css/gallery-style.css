@@ -1,0 +1,133 @@
+@font-face{
+    font-family: "title";
+    src: url("../static/css/SourceSansPro-Regular.ttf");
+}
+
+.gallery-container{
+    font-family: "title";
+    font-display: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+    background: url(../img/negro2.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-gallery{
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+}
+
+.galeria {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galeria .box-img {
+	max-width: 300px;  
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
+	overflow: hidden;
+	margin-bottom: 30px;
+} 
+.galeria .box-img img{
+	width: 100%;
+	vertical-align: top;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+.galeria .box-img img:hover{
+	transform: scale(1.09);
+}
+
+figure {
+	width: 300px;
+	background-color: rgba(0,0,0,0.5);
+	margin: 10px 0;
+	border: 1px solid #777;
+	box-sizing: border-box;
+	padding: 10px;
+	
+}
+
+figure figcaption{
+	text-align: center;
+	padding: 5px 4px;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 520px){
+	.galeria .box-img{
+		width: 100%;
+	}
+}
+
+nav{
+    background-color: #252629;
+    width: 100%;
+}
+
+footer{
+    background-color: rgb(0,0,0,0.8);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color:white;
+}
+
+footer a {
+    color:#EC5504;
+    text-decoration: none;
+}
+
+#maps{
+    max-width: 500px;
+    width:100%;
+    margin: 0 auto;
+    display:block;
+    max-height: 80px;
+    frameborder:0;
+    border:0;
+}
+
+.content-box{
+    text-align: justify;
+}
+
+.foot-box{
+    width: 50%
+}
+
+#horse{
+    text-align: center;
+    width: 100%;
+}
+
+td{
+    color:white;
+}
+
+#search-in{
+    width:150px;
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+#search-rigth{
+    float:right;
+}
