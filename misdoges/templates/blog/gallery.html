@@ -13,7 +13,11 @@
                     <h2>{{perros.nombre}}</h2>
                     <p>{{perros.raza}}</p>
                     <p>{{perros.descripcion}}</p>
+                    <p>{{perros.estado}}</p>
                     <p>{{perros.published_date}}</p>
+                    {% if user.is_authenticated %}
+                    <button>Adoptar</button>
+					{% endif %}
                 </figcaption>
             </figure>
             {% endfor %}
