@@ -61,11 +61,8 @@ figure {
 	
 }
 
-figure h2{
-	border: 1px solid #06A99F;
-}
 figure button{
-	background: #4BE99E;
+	background: #942c3c;
     color: black;
     border: none;
     width: 100%;
@@ -78,7 +75,8 @@ figure button{
 }
 
 figure button:hover{
-	background: #C70039;
+    background: #ede8dd;
+    color: #ede8dd;
 }
 figure figcaption{
 	text-align: center;
