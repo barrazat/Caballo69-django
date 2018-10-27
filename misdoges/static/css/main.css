@@ -11,6 +11,7 @@ body{
     width: 100%;
     margin: 0;
     font-size: 18px;
+    /*background: #dde4e8;*/
 }
 
 p,h2,h3 {
@@ -18,7 +19,7 @@ p,h2,h3 {
 }
 
 .header-index{
-    background-color: #EC5504;
+    background-color: #942c3c;
     color:white;
     display: flex;
     flex-wrap: wrap;
@@ -39,7 +40,7 @@ main {
 }
 
 footer{
-    background-color: #343434;
+    background-color: #536071;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -47,7 +48,7 @@ footer{
 }
 
 footer a {
-    color:#EC5504;
+    color:#ede8dd;
     text-decoration: none;
 }
 
@@ -80,7 +81,7 @@ footer a {
 }
 
 .content-box a{
-    color:green;
+    color:	#942c3c;
     padding:15px;
     text-decoration: none;
 }

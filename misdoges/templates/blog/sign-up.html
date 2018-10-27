@@ -1,35 +1,37 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+<div class="cont-body">
+    </div>
     <div class="contenedor-form" id="formInicio">
         <div class="toggle">
             <span >Crear Cuenta</span>
         </div>
         <div class="formulario">
-            <h2>Iniciar Sesión</h2>
+            <h2>Iniciar sesión</h2>
             <form action="#">
                 <input type="text" placeholder="Usuario" required>
                 <input type="password" placeholder="Contraseña" required>
-                <button type="button" name="iniciar" id="iniciar" >Iniciar sesion</button>
+                <button type="button" name="iniciar" id="iniciar" >Iniciar sesión</button>
             </form>
         </div>
         <div class="formulario" id="formRegistro">
-            <h2>Crear Cuenta</h2>
+            <h2>Crear cuenta</h2>
             <form action="#">
                 <input type="text" id="nombres" placeholder="Nombre y Apellido" >
                 <input type="email" id="correo" placeholder="Correo" >
-            <input type="text" id="rut" placeholder="RUT">
+                <input type="text" id="rut" placeholder="RUT">
                 <input type="text" id="telefono"  placeholder="Telefono" >
                 <input type="text" id="usuarioNuevo" placeholder="Usuario" >
                 <input type="password" id="contraseñaNuevo" placeholder="Contraseña" >
             <!-- <input type="password" id="contraseñaNuevo2" placeholder="Confirmar contraseña" > 
             -->
                 <label >Fecha de nacimiento </label> <br>
-                <input type="date" id="nacimiento" step="1" min="1950-01-01" max="2001-12-31" value="07-09-2018" > <br>
-                <label for="txtRegion">Region:</label>
+                <input type="date" id="nacimiento" step="1" min="1950-01-01" max="2001-12-31"  > <br>
+                <label for="txtRegion">Region</label>
                 <select id="txtRegion" oninput="selectCity()"></select>
                 <br>
-                <label for="txtCity">Ciudad:</label>
+                <label for="txtCity">Ciudad</label>
                 <select id="txtCity"></select>
                 <br>
                 
@@ -51,4 +53,5 @@
             <button type="button" name="btn-olvide" id="btn-olvide" >Olvide mi contraseña</button>
         </div>
     </div>
+</div>
 {% endblock %}

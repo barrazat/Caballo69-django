@@ -1,18 +1,17 @@
-body {
-    background: url(../img/display/dog-3.jpg) center;
+.cont-body {
+    /*background: url(../img/dog-3.jpg)  center;
     background-size: cover;
-    background-attachment: fixed;
-    font-size: 18px;
+    background-attachment: fixed;*/
+    font-family: "title";
 }
 
 .contenedor-form{
-    background: rgba(0,0,0,0.7);
+    background: #22232d;
     width: 100%;
     max-width: 500px;
     margin: 48px auto;
     border-radius: 5px;
     color: #fff;
-    /*padding: 50px;*/
 }
 .contenedor-form .toggle {
     margin: 0 auto;
@@ -25,8 +24,8 @@ body {
     font-size: 12px;
     line-height: 25px;
     text-align: center;
-    border-top: 2px solid #FFC300;
-    border-bottom: 2px solid #FFC300;
+    border-top: 2px solid #942c3c;
+    border-bottom: 2px solid #942c3c;
     transition: all .5s ;
     cursor: pointer;
 }
@@ -35,32 +34,26 @@ body {
     
 }
 .contenedor-form .toggle:hover{
-    border-top: 2px solid #C70039;
-    border-bottom: 2px solid #C70039;
+    border-top: 2px solid #dde4e8;
+    border-bottom: 2px solid #dde4e8;
 }
 
 .contenedor-form h2{
     margin: 0 0 28px 0;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 300;
     line-height: 1;
+    text-align: center;
 }
 .contenedor-form label {
    margin: 0 0 28px 0;
-    font-size: 20px;
     font-weight: 300;
     line-height: 1; 
+    text-align: center;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
 }
-
-
-/*
-#nombre, #apellido {
-    outline: none;
-    display: block;
-    width: 100%;
-    padding: 10px 15px;
-}
-*/
 .contenedor-form input[type="text"],
 .contenedor-form input[type="password"],
 .contenedor-form input[type="email"],
@@ -74,7 +67,7 @@ body {
     color: #fff;
     border: none;
     border-radius: 2px;
-    border-bottom: 4px solid #FFC300;
+    border-bottom: 4px solid #942c3c;
     box-sizing: border-box;
     font-size: 14px;
     font-weight: normal;
@@ -87,7 +80,7 @@ body {
 .contenedor-form input[type="email"]:hover,
 .contenedor-form input[type="number"]:hover,
 .contenedor-form input[type="date"]:hover{
-    border-bottom: 4px solid #C70039;
+    border-bottom: 4px solid #dde4e8;
 }
 #txtRegion {
     background: rgba(0,0,0,0.5);
@@ -118,7 +111,7 @@ body {
     font-weight: normal; 
 }
 #enviar, #iniciar{
-    background: #FFC300;
+    background: #942c3c;
     color: #fff;
     border: none;
     width: 100%;
@@ -130,7 +123,8 @@ body {
     transition: all .7s;
 }
 #enviar:hover, #iniciar:hover{
-    background: #C70039;
+    background: #ede8dd;
+    color: #22232d;
 }
 
 #btn-olvide {
@@ -145,7 +139,7 @@ body {
     transition: all .8s;
 }
 #btn-olvide:hover{
-    background: #C70039;
+    background: #942c3c;
 }
 
 .contenedor-form .formulario {
