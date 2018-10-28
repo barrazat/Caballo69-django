@@ -63,7 +63,7 @@ figure {
 
 figure button{
 	background: #942c3c;
-    color: black;
+    color: #ede8dd;
     border: none;
     width: 100%;
     padding: 10px 0;
@@ -76,7 +76,7 @@ figure button{
 
 figure button:hover{
     background: #ede8dd;
-    color: #ede8dd;
+    color: 	#22232d;
 }
 figure figcaption{
 	text-align: center;

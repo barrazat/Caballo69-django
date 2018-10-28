@@ -22,6 +22,11 @@
             <li><a href="#">Servicios</a></li>
             <li><a href="{% url 'gallery' %}">Galeria</a></li>
             <li><a href="{% url 'sign-up' %}">Entrar</a></li>
+            <li><a href="{% url 'accounts:signup' %}">sign up</a></li>
+            <li><a href="{% url 'accounts:login' %}">log in </a></li>
+            <li><a href="{% url 'accounts:logout' %}" method="POST">log out </a></li>
+            
+
             <li id="search-rigth"><input id="search-in" type="text" placeholder="Buscar..."></li>
           </ul>
     </nav>
