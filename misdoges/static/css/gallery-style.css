@@ -58,27 +58,23 @@ figure {
 	border: 1px solid #777;
 	box-sizing: border-box;
 	padding: 10px;
-	
 }
 
-figure h2{
-	border: 1px solid #06A99F;
-}
 figure button{
-	background: #4BE99E;
-    color: black;
+	background: #942c3c;
+    color: #ede8dd;
     border: none;
     width: 100%;
     padding: 10px 0;
     font-weight: normal;
     letter-spacing: 1px;
     font-size: 16px;
-    cursor: pointer;
     transition: all .7s;
 }
 
 figure button:hover{
-	background: #C70039;
+    background: #ede8dd;
+    color : #22223d;
 }
 figure figcaption{
 	text-align: center;
