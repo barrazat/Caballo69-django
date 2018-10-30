@@ -1,0 +1,58 @@
+    {% extends 'blog/base.html' %}
+
+    {% block content %}
+    <div class="cont-body">
+        </div>
+        <div class="contenedor-form" id="formInicio">
+            <div class="toggle">
+                <span >Crear Cuenta</span>
+            </div>
+            <div class="formulario">
+                <h2>Iniciar sesión</h2>
+                <form class="site-form" action="{% url 'accounts:login' %}" method="POST">
+                    {% csrf_token %}
+                    <input type="text" name="username" autofocus required id="id_username" placeholder="Usuario" required>
+                    <input type="password" name="password" required id="id_password" placeholder="Contraseña" required>
+                    <button type="submit" name="iniciar" id="iniciar" value="Login">Iniciar sesión</button>
+                </form>
+            </div>
+            <div class="formulario" id="formRegistro">
+                <h2>Crear cuenta</h2>
+                <form class="site-form" action="{% url 'accounts:signup' %}" method="POST">
+                    {% csrf_token %}
+                    <input type="text" id="nombres" placeholder="Nombre y Apellido" >
+                    <input type="email" id="correo" placeholder="Correo" >
+                    <input type="text" id="rut" placeholder="RUT">
+                    <input type="text" id="telefono"  placeholder="Telefono" >
+                    <input type="text" name="username" maxlength="150" autofocus required id="id_username" placeholder="Usuario">
+                    <input type="password" name="password1" required id="id_password1" placeholder="Contraseña">
+                    <input type="password" name="password2" required id="id_password2" placeholder="Contraseña">   
+                    <label >Fecha de nacimiento </label> <br>
+                    <input type="date" id="nacimiento" step="1" min="1950-01-01" max="2001-12-31"  > <br>
+                    <label for="txtRegion">Region</label>
+                    <select id="txtRegion" oninput="selectCity()"></select>
+                    <br>
+                    <label for="txtCity">Ciudad</label>
+                    <select id="txtCity"></select>
+                    <br>
+                    
+                    <label for="txtTipoVivienda">Tipo vivienda</label>
+                    <select id="txtTipoVivienda">
+                        <option> ---------------</option>
+                        <option> Casa con patio grande</option>
+                        <option> Casa con patio pequeño</option>
+                        <option> Casa sin patio</option>
+                        <option> Departamento</option>
+                    </select><br>
+                    
+                    <button type="submit" name="enviar" id="enviar" value="signup">Registrarse</button>
+                    
+                </form>
+            </div>
+            <div class="reset-password">
+                <button type="button" name="btn-olvide" id="btn-olvide" >Olvide mi contraseña</button>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    

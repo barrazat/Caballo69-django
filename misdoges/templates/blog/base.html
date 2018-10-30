@@ -17,11 +17,17 @@
         
     <nav>
         <ul>
-            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'misdoges:index' %}">Inicio</a></li>
             <li><a href="#">Quienes somos</a></li>
             <li><a href="#">Servicios</a></li>
-            <li><a href="{% url 'gallery' %}">Galeria</a></li>
-            <li><a href="{% url 'sign-up' %}">Entrar</a></li>
+            <li><a href="{% url 'misdoges:gallery' %}">Galeria</a></li>
+            <li><a href="{% url 'accounts:signup' %}">Entrar</a></li>
+            {% if user.is_authenticated %}
+                <li><form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit" id="btnLogout">Cerrar sesión</button>
+                </form> </li>
+            {% endif %}
             <li id="search-rigth"><input id="search-in" type="text" placeholder="Buscar..."></li>
           </ul>
     </nav>
